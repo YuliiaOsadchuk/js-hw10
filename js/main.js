@@ -1,7 +1,7 @@
 const letters = document.querySelectorAll(".letter-block");
 const audio = new Audio();
 letters.forEach((letter)=>letter.addEventListener('click', function(event){
-    audio.src = `./sound/${event.toElement.id}.mp3`;
+    audio.src = `./sound/${event.target.id}.mp3`;
     audio.play();
 }))
 
